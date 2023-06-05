@@ -20,6 +20,7 @@ const generateGradient = (isRand) => {
     const gradient = `linear-gradient(${gradientDirection.value}, ${colorInputs[0].value}, ${colorInputs[1].value})`;
     gradientBox.style.background=gradient;
     textArea.value = `background: ${gradient}`;
+    document.body.style.background = gradient;
 }
 
 const copycode = () => {
